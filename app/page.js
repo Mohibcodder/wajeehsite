@@ -1,11 +1,15 @@
-import React from 'react'
+import HeroSection from '../components/HeroSection'
+import AboutSection from '../components/AboutSection'
+import WorkSection from '../components/WorkSection'
+import ContactSection from '../components/ContactSection'
 
-function page() {
+export default function Home() {
   return (
-    <div>
-     here is Rida wajeeh
-    </div>
+    <>
+      <HeroSection />
+      <AboutSection />
+      <WorkSection />
+      <ContactSection />
+    </>
   )
 }
-
-export default page
