@@ -32,17 +32,21 @@ export default function AboutSection() {
   }
 
   const skills = [
-    { name: 'UI/UX Design', level: 90 },
-    { name: 'Web Development', level: 85 },
-    { name: 'Mobile Design', level: 80 },
-    { name: 'Brand Identity', level: 75 },
-    { name: 'Frontend Development', level: 88 },
-    { name: 'Motion Design', level: 70 }
+    { name: 'Web Designing', level: 95},
+    { name: 'MERN STACK', level: 75 },
+    { name: 'Next.js', level: 85 },
+    { name: 'React.js', level: 88},
+    { name: 'Javascript', level: 92 },
+    { name: 'C++', level: 87 },
+    { name: 'Sass', level: 83},
+    { name: 'DSA', level: 80},
+    { name: 'Tailwind', level: 95},
+    { name: 'OOP', level: 82},
   ]
 
   return (
-    <section 
-      id="about" 
+    <section
+      id="about"
       ref={ref}
       className="py-20 bg-gradient-to-b from-white to-gray-50 dark:from-gray-900 dark:to-gray-800 overflow-hidden"
     >
@@ -54,15 +58,15 @@ export default function AboutSection() {
           className="flex flex-col lg:flex-row gap-12 items-center"
         >
           {/* Image Section */}
-          <motion.div 
+          <motion.div
             variants={item}
             className="lg:w-1/2 relative"
           >
             <div className="relative w-full max-w-md mx-auto">
               <div className="absolute -inset-4 bg-gradient-to-r from-rose-400 to-pink-500 rounded-2xl blur-lg opacity-30 dark:opacity-20 animate-rotate"></div>
               <div className="relative bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-2xl border border-gray-100 dark:border-gray-700">
-                <img 
-                  src="/waje.jpg" 
+                <img
+                  src="https://img.freepik.com/free-vector/ui-ux-designers-isometric-composition-with-small-people-creating-custom-design-web-site-3d-vector-illustration_1284-68939.jpg?t=st=1745661603~exp=1745665203~hmac=fab29c5cbe795cbb7ee901cc4b1637ae8382f2ba0d60d3346e0499fb4534ce7b&w=1380"
                   alt="Wajeeh ul Hassan"
                   className="w-full h-auto object-cover"
                 />
@@ -78,59 +82,36 @@ export default function AboutSection() {
           </motion.div>
 
           {/* Content Section */}
-          <motion.div 
+          <motion.div
             variants={item}
             className="lg:w-1/2"
           >
-            <motion.h2 
+            <motion.h2
               variants={item}
               className="text-4xl md:text-5xl font-bold mb-8 text-transparent bg-clip-text bg-gradient-to-r from-gray-800 to-gray-600 dark:from-gray-100 dark:to-gray-300"
             >
               About <span className="text-rose-500 dark:text-rose-400">Me</span>
             </motion.h2>
 
-            <motion.p 
+            <motion.p
               variants={item}
               className="text-lg mb-6 text-gray-600 dark:text-gray-300"
             >
-              I'm a passionate designer and developer with over 5 years of experience creating digital products that are both beautiful and functional.
+              I am a Full Stack Web Developer with 1 year of experience, specializing in Next.js, React.js, MERN Stack, and web designing. I create fast, secure, and SEO-friendly websites that help businesses grow online. What I Offer: Next.js and React.js Website Development Full-Stack MERN Web Apps (MongoDB, Express.js, React, Node.js) Responsive Design (Desktop, Tablet, Mobile) SEO Optimization for Better Ranking Tailwind CSS and SCSS Styling for a Modern Look E-commerce, Business, and Portfolio Websites.
             </motion.p>
 
-            <motion.p 
+            <motion.p
               variants={item}
               className="text-lg mb-8 text-gray-600 dark:text-gray-300"
             >
               My approach combines creative design with technical expertise to deliver solutions that not only look great but also perform exceptionally well across all platforms.
             </motion.p>
-
-            <motion.div variants={item}>
-              <h3 className="text-2xl font-semibold mb-6 text-gray-800 dark:text-gray-200">My Skills</h3>
-              <div className="space-y-4">
-                {skills.map((skill, index) => (
-                  <div key={index} className="relative">
-                    <div className="flex justify-between mb-1">
-                      <span className="text-gray-700 dark:text-gray-300 font-medium">{skill.name}</span>
-                      <span className="text-gray-500 dark:text-gray-400 text-sm">{skill.level}%</span>
-                    </div>
-                    <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2.5">
-                      <motion.div
-                        initial={{ width: 0 }}
-                        animate={inView ? { width: `${skill.level}%` } : { width: 0 }}
-                        transition={{ duration: 1, delay: 0.3 + index * 0.1 }}
-                        className="h-2.5 rounded-full bg-gradient-to-r from-rose-500 to-pink-500"
-                      />
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </motion.div>
-
-            <motion.div 
+            <motion.div
               variants={item}
               className="mt-10"
             >
-              <a 
-                href="/resume.pdf" 
+              <a
+                href="/resume.pdf"
                 download
                 className="inline-flex items-center px-6 py-3.5 border border-transparent text-base font-medium rounded-lg shadow-sm text-white bg-gradient-to-r from-rose-500 to-pink-500 hover:from-rose-600 hover:to-pink-600 transition-all duration-300 hover:shadow-lg hover:shadow-rose-500/30"
               >
@@ -140,9 +121,38 @@ export default function AboutSection() {
                 </svg>
               </a>
             </motion.div>
+
+
           </motion.div>
         </motion.div>
       </div>
+
+      <motion.div variants={item} className="px-4 md:px-10 mt-20">
+      <h2 className="text-center text-4xl md:text-5xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-gray-800 to-gray-600 dark:from-gray-100 dark:to-gray-300 mb-10">
+              My <span className="text-rose-500 dark:text-rose-400">SKILLS</span>
+            </h2>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {skills.map((skill, index) => (
+            <motion.div key={index}>
+              <div className="flex justify-between mb-1">
+                <span className="text-gray-700 dark:text-gray-300 font-medium">{skill.name}</span>
+                <span className="text-gray-500 dark:text-gray-400 text-sm">{skill.level}%</span>
+              </div>
+              <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2.5">
+                <motion.div
+                  initial={{ width: 0 }}
+                  animate={inView ? { width: `${skill.level}%` } : { width: 0 }}
+                  transition={{ duration: 1, delay: 0.3 + index * 0.1 }}
+                  className="h-2.5 rounded-full bg-gradient-to-r from-rose-500 to-pink-500"
+                />
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </motion.div>
+
+
     </section>
   )
 }

@@ -3,7 +3,7 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 
 export const metadata = {
-  title: 'Rida Syed | Portfolio',
+  title: 'MOHIB UR REHMAN | Portfolio',
   description: 'Creative designer and developer portfolio',
 }
 

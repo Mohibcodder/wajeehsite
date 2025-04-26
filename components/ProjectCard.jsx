@@ -25,7 +25,7 @@ export default function ProjectCard({ project }) {
         <h3 className="text-xl font-bold text-gray-800 dark:text-white mb-2">{project.title}</h3>
         <p className="text-gray-600 dark:text-gray-300 mb-4">{project.description}</p>
         <div className="flex flex-wrap gap-2 mb-4">
-          {project.tags.map((tag, index) => (
+          {project.highlights.map((tag, index) => (
             <span 
               key={index} 
               className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-sm rounded-full"
@@ -36,6 +36,7 @@ export default function ProjectCard({ project }) {
         </div>
         <Link 
           href={project.link}
+          target='_blank'
           className="inline-flex items-center text-rose-500 dark:text-rose-400 font-medium hover:underline"
         >
           View Project

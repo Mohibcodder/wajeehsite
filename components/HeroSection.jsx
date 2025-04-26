@@ -2,6 +2,7 @@
 import Link from 'next/link'
 import { useEffect, useRef } from 'react'
 import { motion, useAnimation, useInView } from 'framer-motion'
+import { TypeAnimation } from 'react-type-animation';
 
 export default function HeroSection() {
   const controls = useAnimation()
@@ -13,7 +14,9 @@ export default function HeroSection() {
       controls.start("visible")
     }
   }, [controls, isInView])
-
+  const Skill1 = "Front-end Designer";
+  const Skill2 = "Back-end Developer";
+  const Skill3 = "Shopify-Developer";
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -64,7 +67,7 @@ export default function HeroSection() {
   }
 
   return (
-    <section 
+    <section
       ref={ref}
       className="relative pt-32 pb-20 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 overflow-hidden"
     >
@@ -76,36 +79,42 @@ export default function HeroSection() {
 
       <div className="container mx-auto px-6 relative z-10">
         <motion.div
-          className="flex flex-col md:flex-row items-center"
+          className="flex flex-col-reverse md:flex-row items-center"
           variants={containerVariants}
           initial="hidden"
           animate={controls}
         >
           <div className="md:w-1/2 mb-10 md:mb-0">
             <motion.div variants={itemVariants}>
-              <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-                Hi, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-rose-500 to-pink-500 dark:from-rose-400 dark:to-pink-400">Wajeeh ul Hassan</span>
+              <h1 className="text-4xl md:text-6xl font-bold mb-1 leading-tight">
+                <div>Hi 👋 I'm </div>
+                <div><span className="text-transparent bg-clip-text bg-gradient-to-r from-rose-500 to-pink-500 dark:from-rose-400 dark:to-pink-400">MOHIB UR REHMAN</span></div>
               </h1>
             </motion.div>
-            
+
+            <TypeAnimation
+                  sequence={[Skill1, 1000, Skill2, 1000, Skill3, 1000]}
+                  wrapper="span"
+                  speed={50}
+                  repeat={Infinity}
+                  className="text-5xl md:text-6xl font-bold"
+                />
+
+
+
+
             <motion.div variants={itemVariants}>
-              <h2 className="text-2xl md:text-3xl font-semibold mb-6 bg-gradient-to-r from-gray-600 to-gray-800 dark:from-gray-300 dark:to-gray-100 text-transparent bg-clip-text">
-                Creative Designer & Developer
-              </h2>
-            </motion.div>
-            
-            <motion.div variants={itemVariants}>
-              <p className="text-lg mb-8 text-gray-600 dark:text-gray-300 max-w-lg">
-                I craft immersive digital experiences that blend stunning design with cutting-edge technology to help brands stand out in the digital landscape.
+              <p className="text-lg mb-8 text-gray-600 dark:text-gray-300 max-w-lg mt-4">
+              Are you looking for a modern, high-performance, and fully responsive website? You are in the right place!
               </p>
             </motion.div>
-            
-            <motion.div 
+
+            <motion.div
               className="flex flex-wrap gap-4"
               variants={itemVariants}
             >
-              <Link 
-                href="/work" 
+              <Link
+                href="#work"
                 className="px-8 py-3.5 bg-gradient-to-r from-rose-500 to-pink-500 hover:from-rose-600 hover:to-pink-600 text-white font-medium rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-rose-500/30 flex items-center gap-2"
               >
                 <span>View My Work</span>
@@ -113,8 +122,8 @@ export default function HeroSection() {
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clipRule="evenodd" />
                 </svg>
               </Link>
-              <Link 
-                href="/contact" 
+              <Link
+                href="#contact"
                 className="px-8 py-3.5 border-2 border-gray-800 dark:border-gray-200 text-gray-800 dark:text-gray-200 hover:bg-gray-800 hover:text-white dark:hover:bg-gray-200 dark:hover:text-gray-800 font-medium rounded-lg transition-all duration-300 flex items-center gap-2"
               >
                 <span>Contact Me</span>
@@ -125,19 +134,19 @@ export default function HeroSection() {
               </Link>
             </motion.div>
           </div>
-          
-          <motion.div 
+
+          <motion.div
             className="md:w-1/2 flex justify-center"
             variants={imageVariants}
           >
-            <motion.div 
+            <motion.div
               className="relative w-64 h-64 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-rose-500/30 dark:border-rose-400/30 shadow-2xl"
               animate="float"
               variants={floatingVariants}
             >
               <div className="absolute inset-0 bg-gradient-to-br from-rose-500/20 to-pink-500/20 dark:from-rose-400/20 dark:to-pink-400/20"></div>
-              <img 
-                src="/waje.jpg" 
+              <img
+                src="/mohibpic.jpg"
                 alt="Wajeeh ul Hassan"
                 className="w-full h-full object-cover relative z-10"
               />
@@ -149,7 +158,7 @@ export default function HeroSection() {
       </div>
 
       {/* Animated scroll indicator */}
-      <motion.div 
+      <motion.div
         className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}

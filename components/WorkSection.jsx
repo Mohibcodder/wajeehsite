@@ -5,36 +5,109 @@ import ProjectCard from './ProjectCard'
 
 const projects = [
   {
-    id: 1,
-    title: "E-Commerce Platform",
-    description: "A complete online shopping solution with product management, cart functionality, and secure checkout.",
-    tags: ["React", "Node.js", "MongoDB"],
-    image: "https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80",
-    link: "#"
+    id:1,
+    title: "ForwardSols | Comprehensive MERN and Next.js",
+    description: "A real-time, fully integrated web platform with interactive dashboard and robust back-end.",
+    highlights: [
+      "Next.js & MERN stack",
+      "Real-time functionality",
+      "Multi-domain integration",
+      "Responsive design"
+    ],
+    image: '/project1.png',
+    link: "https://www.forwardsols.com/",
+    github: "#",
+    tags: ["Full Stack", "Next.js", "MERN"]
   },
   {
-    id: 2,
-    title: "Portfolio Website",
-    description: "A sleek portfolio website with animations and dark mode support.",
-    tags: ["Next.js", "Tailwind CSS", "Framer Motion"],
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
-    link: "#"
+    id:2,
+    title: "Client Portfolio Website | Next.js MERN Project",
+    description: "Cutting-edge portfolio with dynamic content and advanced animations.",
+    highlights: [
+      "Interactive portfolio",
+      "Dynamic content",
+      "Advanced animations",
+      "Responsive design"
+    ],
+    image: '/project2.png',
+    link: "https://www.forwardsols.com/AwaisSheikh",
+    github: "#",
+    tags: ["Frontend", "Next.js", "Animation"]
   },
   {
-    id: 3,
-    title: "Mobile Banking App",
-    description: "Financial management app with transaction history and budgeting tools.",
-    tags: ["React Native", "Firebase", "Redux"],
-    image: "https://images.unsplash.com/photo-1603302576837-37561b2e2302?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1468&q=80",
-    link: "#"
+    id:3,
+    title: "Event Equation | Event Management Website",
+    description: "Feature-rich event management platform with stunning animations.",
+    highlights: [
+      "Event management",
+      "Dynamic portfolio",
+      "Testimonial section",
+      "Performance optimized"
+    ],
+    image: '/project3.png',
+    link: "https://event-equation.vercel.app",
+    github: "#",
+    tags: ["Full Stack", "Next.js", "Animation"]
   },
   {
-    id: 4,
-    title: "Task Management Dashboard",
-    description: "Productivity app with team collaboration features and analytics.",
-    tags: ["Vue.js", "Express", "PostgreSQL"],
-    image: "https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80",
-    link: "#"
+    id:4,
+    title: "CarKing – Ultimate Car Buying & Selling Platform",
+    description: "Modern platform for car sales with user and admin dashboards.",
+    highlights: [
+      "User dashboard",
+      "Admin controls",
+      "Advanced search",
+      "Secure transactions"
+    ],
+    image: '/project4.png',
+    link: "https://purecar.co.uk/",
+    github: "#",
+    tags: ["Full Stack", "MERN", "E-commerce"]
+  },
+  {
+    id:5,
+    title: "Elegant Timepiece - Premium Watch Store",
+    description: "Luxury Shopify theme for watch retail with live chat support. Password is 1.",
+    highlights: [
+      "Shopify theme",
+      "Live chat",
+      "SEO optimized",
+      "Premium design"
+    ],
+    image: '/project5.png',
+    link: "https://timevo-theme.myshopify.com/",
+    github: "#",
+    tags: ["Frontend", "Shopify", "E-commerce"]
+  },
+  {
+    id:6,
+    title: "Ali Hassan | Portfolio",
+    description: "Modern portfolio showcasing skills, projects and blog.",
+    highlights: [
+      "Interactive UI",
+      "Skills showcase",
+      "Project gallery",
+      "Functional contact"
+    ],
+    image: '/project7.png',
+    link: "https://alihassan-website.vercel.app/",
+    github: "#",
+    tags: ["Frontend", "React", "Portfolio"]
+  },
+  {
+    id:7,
+    title: "Baroque-Style | E-commerce Website",
+    description: "Baroque-inspired React e-commerce platform with elegant design.",
+    highlights: [
+      "Themed design",
+      "Multi-page",
+      "Responsive",
+      "E-commerce"
+    ],
+    image: '/project6.png',
+    link: "https://baroque-red.vercel.app/",
+    github: "#",
+    tags: ["Frontend", "React", "E-commerce"]
   }
 ]
 
@@ -68,8 +141,8 @@ export default function WorkSection() {
   }
 
   return (
-    <section 
-      id="work" 
+    <section
+      id="work"
       ref={ref}
       className="py-20 bg-gradient-to-b from-gray-50 to-white dark:from-gray-800 dark:to-gray-900"
     >
@@ -88,28 +161,13 @@ export default function WorkSection() {
             </p>
           </motion.div>
 
-          <motion.div 
+          <motion.div
             variants={item}
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12"
           >
-            {projects.slice(0, 4).map((project) => (
+            {projects.slice(0, 7).map((project) => (
               <ProjectCard key={project.id} project={project} />
             ))}
-          </motion.div>
-
-          <motion.div 
-            variants={item}
-            className="text-center"
-          >
-            <a 
-              href="/projects" 
-              className="inline-flex items-center px-8 py-3.5 border border-transparent text-base font-medium rounded-lg shadow-sm text-white bg-gradient-to-r from-rose-500 to-pink-500 hover:from-rose-600 hover:to-pink-600 transition-all duration-300 hover:shadow-lg hover:shadow-rose-500/30"
-            >
-              View All Projects
-              <svg xmlns="http://www.w3.org/2000/svg" className="ml-2 -mr-1 h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-              </svg>
-            </a>
           </motion.div>
         </motion.div>
       </div>

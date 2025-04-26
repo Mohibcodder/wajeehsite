@@ -21,8 +21,8 @@ export default function Header() {
   const navItems = [
     { name: 'Home', href: '/' },
     { name: 'About', href: '#about' },
-    { name: 'Work', href: '/work' },
-    { name: 'Contact', href: '/contact' },
+    { name: 'Work', href: '#work' },
+    { name: 'Contact', href: '#contact' },
   ]
 
   return (
@@ -34,7 +34,7 @@ export default function Header() {
             href="/" 
             className="text-2xl font-bold text-gray-800 dark:text-white relative group"
           >
-            <span className="relative z-10">Rida Syed</span>
+            <span className="relative z-10">MOHIB UR REHMAN</span>
             <span className="absolute bottom-0 left-0 w-full h-1 bg-rose-500 dark:bg-rose-400 rounded-full scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-300"></span>
           </Link>
           
@@ -68,7 +68,7 @@ export default function Header() {
         
         {/* Mobile Menu with animation */}
         <div className={`bg-gray-800 md:hidden overflow-hidden transition-all duration-500 ease-in-out ${isMenuOpen ? 'max-h-96 pt-4' : 'max-h-0'}`}>
-          <ul className="flex flex-col space-y-4 pb-4">
+          <ul className="flex flex-col space-y-4 pb-4 pl-4">
             {navItems.map((item, index) => (
               <li key={index}>
                 <Link 
