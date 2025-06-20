@@ -87,7 +87,7 @@ export default function HeroSection() {
           <div className="md:w-1/2 mb-10 md:mb-0">
             <motion.div variants={itemVariants}>
               <h1 className="text-4xl md:text-6xl font-bold mb-1 leading-tight">
-                <div>Hi 👋 I'm </div>
+                <div>Hi 👋 I am </div>
                 <div><span className="text-transparent bg-clip-text bg-gradient-to-r from-rose-500 to-pink-500 dark:from-rose-400 dark:to-pink-400">MOHIB UR REHMAN</span></div>
               </h1>
             </motion.div>
