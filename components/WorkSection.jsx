@@ -15,7 +15,7 @@ const projects = [
       "Responsive design"
     ],
     image: '/project1.png',
-    link: "https://www.forwardsols.com/",
+    link: "https://forward-sol.vercel.app/",
     github: "#",
     tags: ["Full Stack", "Next.js", "MERN"]
   },
@@ -30,7 +30,7 @@ const projects = [
       "Responsive design"
     ],
     image: '/project2.png',
-    link: "https://www.forwardsols.com/AwaisSheikh",
+    link: "https://forward-sol.vercel.app/AwaisSheikh",
     github: "#",
     tags: ["Frontend", "Next.js", "Animation"]
   },
@@ -108,6 +108,126 @@ const projects = [
     link: "https://baroque-red.vercel.app/",
     github: "#",
     tags: ["Frontend", "React", "E-commerce"]
+  },
+  {
+    id:8,
+    title: "Techspectrum | Company Website",
+    description: "Corporate tech website offering services and blogs for digital growth.",
+    highlights: [
+      "Blogs",
+      "Responsive",
+      "Multi-pages",
+      "Company"
+    ],
+    image: '/project8.jpg',
+    link: "https://techspectrumsolution.com/",
+    github: "#",
+    tags: ["Frontend", "React", "E-commerce"]
+  },
+  {
+    id:9,
+    title: "Maxies Bridal Ecommerce",
+    description: "Modern e-commerce platform for maxis and bridal clothes with admin dashboard.",
+    highlights: [
+      "E-commerce",
+      "Multi-pages",
+      "Responsive design",
+      "Product"
+    ],
+    image: '/project9.jpg',
+    link: "https://ecommerce-saad.vercel.app/",
+    github: "#",
+    tags: ["Frontend", "React", "E-commerce"]
+  },
+  {
+    id:10,
+    title: "Resume Solutions Marketplace",
+    description: "Website to buy editable and non-editable resumes with CMS support.",
+    highlights: [
+      "Themed design",
+      "Multi-page",
+      "Responsive",
+      "E-commerce"
+    ],
+    image: '/project10.jpg',
+    link: "https://myresume-seven-mocha.vercel.app/",
+    github: "#",
+    tags: ["Frontend", "React", "E-commerce"]
+  },
+  {
+    id:11,
+    title: "Hammad Abbasi Portfolio",
+    description: "Simple and elegant portfolio with animations and EmailJS contact form.",
+    highlights: [
+      "Themed design",
+      "Multi-page",
+      "Responsive",
+      "E-commerce"
+    ],
+    image: '/project11.jpg',
+    link: "https://hammadsite.vercel.app/",
+    github: "#",
+    tags: ["Frontend", "React", "E-commerce"]
+  },
+  {
+    id:12,
+    title: "Orange Sphere Corporate",
+    description: "Unique design website with light and dark mode for tech services.",
+    highlights: [
+      "Themed design",
+      "Multi-page",
+      "Responsive",
+      "E-commerce"
+    ],
+    image: '/project12.jpg',
+    link: "https://sphere-orange.vercel.app/",
+    github: "#",
+    tags: ["Frontend", "React", "E-commerce"]
+  },
+  {
+    id:13,
+    title: "Figma to Nextjs",
+    description: "Website converted from Figma design to Next.js with pixel-perfect accuracy.",
+    highlights: [
+      "Themed design",
+      "Multi-page",
+      "Responsive",
+      "E-commerce"
+    ],
+    image: '/project13.jpg',
+    link: "https://kyubi-umber.vercel.app/",
+    github: "#",
+    tags: ["Frontend", "React", "E-commerce"]
+  },
+  {
+    id:14,
+    title: "AI Chatbot Assistant",
+    description: "Simple and efficient AI chatbot integrated with Gemini AI for smart assistance.",
+    highlights: [
+      "Themed design",
+      "Multi-page",
+      "Responsive",
+      "E-commerce"
+    ],
+    image: '/project14.jpg',
+    link: "https://ai-powered-chatbot-alpha.vercel.app/",
+    github: "#",
+    tags: ["Frontend", "React", "E-commerce"]
+  },
+  {
+    id:15,
+    title: "Tiles Website Shop",
+    description: "Offering a wide variety of premium tiles to elevate the style, durability, and functionality of your home or commercial space",
+    highlights: [
+      "Themed design",
+      "Multi-page",
+      "Responsive",
+      "E-commerce"
+    ],
+    image: '/project15.jpg',
+    link: "https://tiles-website-shop.vercel.app/",
+    github: "#",
+    tags: ["Frontend", "React", "E-commerce"]
   }
 ]
 
@@ -165,7 +285,7 @@ export default function WorkSection() {
             variants={item}
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12"
           >
-            {projects.slice(0, 7).map((project) => (
+            {projects.slice(0, 15).map((project) => (
               <ProjectCard key={project.id} project={project} />
             ))}
           </motion.div>

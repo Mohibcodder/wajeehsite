@@ -97,7 +97,7 @@ export default function AboutSection() {
               variants={item}
               className="text-lg mb-6 text-gray-600 dark:text-gray-300"
             >
-              I am a Full Stack Web Developer with 1 year of experience, specializing in Next.js, React.js, MERN Stack, and web designing. I create fast, secure, and SEO-friendly websites that help businesses grow online. What I Offer: Next.js and React.js Website Development Full-Stack MERN Web Apps (MongoDB, Express.js, React, Node.js) Responsive Design (Desktop, Tablet, Mobile) SEO Optimization for Better Ranking Tailwind CSS and SCSS Styling for a Modern Look E-commerce, Business, and Portfolio Websites.
+              I am a Full Stack Web Developer with 2.5 year of experience, specializing in Next.js, React.js, MERN Stack, and web designing. I create fast, secure, and SEO-friendly websites that help businesses grow online. What I Offer: Next.js and React.js Website Development Full-Stack MERN Web Apps (MongoDB, Express.js, React, Node.js) Responsive Design (Desktop, Tablet, Mobile) SEO Optimization for Better Ranking Tailwind CSS and SCSS Styling for a Modern Look E-commerce, Business, and Portfolio Websites.
             </motion.p>
 
             <motion.p
@@ -111,7 +111,7 @@ export default function AboutSection() {
               className="mt-10"
             >
               <a
-                href="/resume.pdf"
+                href="/Mohibcv.pdf"
                 download
                 className="inline-flex items-center px-6 py-3.5 border border-transparent text-base font-medium rounded-lg shadow-sm text-white bg-gradient-to-r from-rose-500 to-pink-500 hover:from-rose-600 hover:to-pink-600 transition-all duration-300 hover:shadow-lg hover:shadow-rose-500/30"
               >
