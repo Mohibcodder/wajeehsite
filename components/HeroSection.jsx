@@ -146,7 +146,7 @@ export default function HeroSection() {
             >
               <div className="absolute inset-0 bg-gradient-to-br from-rose-500/20 to-pink-500/20 dark:from-rose-400/20 dark:to-pink-400/20"></div>
               <img
-                src="/mohibpic.jpg"
+                src="/mohib.webp"
                 alt="Wajeeh ul Hassan"
                 className="w-full h-full object-cover relative z-10"
               />
